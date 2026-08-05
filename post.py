@@ -38,8 +38,7 @@ def main():
     index = load_progress()
 
     if index >= len(posts):
-        print("すべての投稿が完了しました。")
-        return
+        index = 0
 
     post_to_x(posts[index])
     save_progress(index + 1)
